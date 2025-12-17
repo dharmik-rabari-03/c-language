@@ -10,12 +10,12 @@ int main() {
 
     ptr = str;
 
-    while (*ptr != '\0') {
+   for (; *ptr != '\0'; ptr++) {
         length++;
-        ptr++;
     }
-
+    
     printf("The length of a string is: %d", length);
 
     return 0;
 }
+
