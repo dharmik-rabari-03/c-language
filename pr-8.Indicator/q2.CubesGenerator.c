@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-void cube(int *arr, int size)
+
+void cubeArray(int (*p)[10], int n)
 {
     int i, j;
 
-    printf("Cubes of all elements:\n");
-    for (i = 0; i < size; i++)
+    printf("\nCubes of all elements:\n");
+    for (i = 0; i < n; i++)
     {
-        for (j = 0; j < size; j++)
+        for (j = 0; j < n; j++)
         {
-            int value = *(arr + i * size + j);
-            printf("%d ", value * value * value);
+            printf("%d ", p[i][j] * p[i][j] * p[i][j]);
         }
         printf("\n");
     }
@@ -18,23 +18,22 @@ void cube(int *arr, int size)
 
 int main()
 {
-    int a[10][10];
-    int size, i, j;
+    int a[10][10], n, i, j;
 
     printf("Enter array's size: ");
-    scanf("%d", &size);
+    scanf("%d", &n);
 
-    printf("Enter array elements:\n");
-    for (i = 0; i < size; i++)
+    printf("\nEnter array elements:\n");
+    for (i = 0; i < n; i++)
     {
-        for (j = 0; j < size; j++)
+        for (j = 0; j < n; j++)
         {
             printf("a[%d][%d] = ", i, j);
             scanf("%d", &a[i][j]);
         }
     }
 
-    cube(&a[0][0], size);
+    cubeArray(a, n);
 
     return 0;
 }
