@@ -39,7 +39,8 @@ The array elements are accessed using pointer arithmetic, and the cube of each e
 **Output**
 - Cube of each array element
 
-- <img width="1615" height="983" alt="Screenshot 2025-12-17 202954" src="https://github.com/user-attachments/assets/1f2e1f45-ce6d-49f4-8398-d103b4953133" />
+<img width="770" height="933" alt="Screenshot 2025-12-19 153138" src="https://github.com/user-attachments/assets/3137b9de-75d4-4f4f-b2c0-8d6ff645cd3d" />
+
 
 
 **Key Concept Used**
